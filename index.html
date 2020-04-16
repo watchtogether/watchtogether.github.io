@@ -10,27 +10,33 @@
 
     <style>
      body {
-         background-color: black;
+         background-color: #8e0048;
          color: white;
          text-align: center;
          padding-top: 10px;
+     }
+
+     #logo-container {
+         margin: 0 5em 8em 7.5em;
+         text-align: left
      }
     </style>
 
   </head>
 
   <body>
-    <h1>WatchTogether</h1>
-    <div>
+    <div id="logo-container">      
+      <img src="assets/images/logo.png" id="logo" height=85px align=left>
     </div>
-    <iframe id="ls_embed_1586918901"
-            src="https://livestream.com/accounts/29439072/events/9088092/player?width=960&height=540&enableInfoAndActivity=true&defaultDrawer=&autoPlay=false&mute=false"
-            width="960" height="540" frameborder="0" scrolling="no" allowfullscreen>
+    <iframe width="80%"
+            height="600em"
+            style"background-color:#000"
+            id="myIframe_436995"
+            src="https://wawasho.muvi.com/embed/livestream/fbce55d8f5b7727b01977f770c1c5844"
+            frameborder="0"
+            allowfullscreen
+            allow="encrypted-media">
     </iframe>
-    <script type="text/javascript"
-            data-embed_id="ls_embed_1586918901"
-            src="https://livestream.com/assets/plugins/referrer_tracking.js">
-    </script>
-    <script src="js/scripts.js"></script>
+    <script>var viewPortTag=document.createElement('meta');viewPortTag.name='viewport';viewPortTag.content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;';window.parent.document.getElementsByTagName('head')[0].appendChild(viewPortTag);</script>
   </body>
 </html>
