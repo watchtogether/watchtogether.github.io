@@ -5,38 +5,40 @@
     <meta charset="utf-8">
 
     <title>WatchTogether</title>
-    <meta name="description" content="Watchtogether">
-    <meta name="author" content="watchtogether">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Streams events">    
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <style>
-     body {
+     html, body {
          background-color: #8e0048;
          color: white;
          text-align: center;
-         padding-top: 10px;
      }
-
      #logo-container {
-         margin: 0 5em 8em 7.5em;
-         text-align: left
+         padding: 1em;
      }
-    </style>
-
+    </style>    
   </head>
 
   <body>
-    <div id="logo-container">      
-      <img src="assets/images/logo.png" id="logo" height=85px align=left>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div id="logo-container" class="is-pulled-left">      
+            <img src="assets/images/logo.png" id="logo" style="height:7em">
+          </div>
+        </div>
+        <div class="column"/>
+      </div>     
     </div>
-    <iframe width="80%"
-            height="600em"
-            style"background-color:#000"
-            id="myIframe_436995"
-            src="https://wawasho.muvi.com/embed/livestream/fbce55d8f5b7727b01977f770c1c5844"
-            frameborder="0"
-            allowfullscreen
-            allow="encrypted-media">
-    </iframe>
-    <script>var viewPortTag=document.createElement('meta');viewPortTag.name='viewport';viewPortTag.content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;';window.parent.document.getElementsByTagName('head')[0].appendChild(viewPortTag);</script>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <iframe id="ls_embed_1587093109" src="https://livestream.com/accounts/29439072/events/9089773/player?width=960&height=540&enableInfoAndActivity=true&defaultDrawer=feed&autoPlay=true&mute=false" width="960" height="540" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+          <script type="text/javascript" data-embed_id="ls_embed_1587093109" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>
+        </div>        
+      </div>     
+    </div>
   </body>
 </html>
