@@ -11,34 +11,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <style>
      html, body {
-         background-color: #8e0048;
+         background: rgb(142,0,72);
+         background: linear-gradient(0deg, rgba(142,0,72,1) 0%, rgba(195,97,86,1) 100%);         
          color: white;
          text-align: center;
+         height: 100%;
      }
      #logo-container {
          padding: 1em;
+     }
+     .top-gutter {
+         padding: 2em 0em;
+     }
+     .chat-box {         
+         height: 100%;
      }
     </style>    
   </head>
 
   <body>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div id="logo-container" class="is-pulled-left">      
-            <img src="assets/images/logo.png" id="logo" style="height:7em">
+    <section>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div id="logo-container" class="is-pulled-left">      
+              <img src="assets/images/logo.png" id="logo" style="height:7em">
+            </div>
           </div>
-        </div>
-        <div class="column"/>
-      </div>     
-    </div>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <iframe id="ls_embed_1587093109" src="https://livestream.com/accounts/29439072/events/9089773/player?width=960&height=540&enableInfoAndActivity=true&defaultDrawer=feed&autoPlay=true&mute=false" width="960" height="540" frameborder="0" scrolling="no" allowfullscreen> </iframe>
-          <script type="text/javascript" data-embed_id="ls_embed_1587093109" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>
-        </div>        
-      </div>     
-    </div>
+          <div class="column"/>
+        </div>     
+      </div>
+    </section>
+    <section>
+      <div class="container top-gutter">
+        <div class="columns">
+          <div class="column"/>
+        </div>      
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <iframe id="ls_embed_1587266680" src="https://livestream.com/accounts/29439072/events/9089773/player?width=640&height=360&enableInfoAndActivity=false&defaultDrawer=&autoPlay=false&mute=false" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen> </iframe>
+            <script type="text/javascript" data-embed_id="ls_embed_1587266680" src="https://livestream.com/assets/plugins/referrer_tracking.js"></script>          
+          </div>
+          <div class="column is-one-third">
+            <div class="chat-box">
+              <article class="message">
+                <div class="message-header">
+                  <p>Chat</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body" style="text-align: left">
+                  <p>Coming Soon</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </section>
   </body>
 </html>
